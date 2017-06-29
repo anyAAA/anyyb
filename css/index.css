@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+
+@font-face {
+    font-family: myfont;
+    src: url("../fonts");
+}
+.wrap{
+    padding-top: 150px;
+    position: relative;
+    overflow: hidden;
+}
+.nuu li{
+    border: 1px solid black;
+}
+.nuu .active{
+    background: grey;
+}
+.live div{
+    height: 250px;
+    text-align: center;
+}
+.live .item .link{
+    background: url("../images/play.png") no-repeat;
+    width: 54px;
+    height: 54px;
+}
+@media screen and (min-width: 768px) {
+    .live{
+        height: 250px;
+    }
+    .desc{
+        position: relative;
+        text-align: right;
+        top: 170px;
+        z-index: 111;
+    }
+    .entypy{
+        margin-left: 100px;
+    }
+
+    .good h4{
+        width: 90px;
+        display: block;
+        margin-left: -10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .live{
+        height: 300px;
+    }
+    .desc{
+        /*默认值*/
+        position: static;
+    }
+    .entypy{
+        margin: 0 auto;
+    }
+    .good h4{
+
+        display: block;
+        margin:0 align-self : ;;
+    }
+    
+}
+.pic{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    /*transform: translateX(-50%);*/
+    margin-left: -50%;
+    /*解决决定定位的方法*/
+}
+.xuanzhuan{
+    animation: xuanzhuan 15s linear infinite;
+}
+@keyframes xuanzhuan {
+    0%{transform: rotate(0deg)}
+    100%{transform: rotate(360deg)}
+}
+
+
+.well{
+    text-align: center;
+
+}
+.well h5{
+    font-size: 18px;
+    font-weight: 500;
+}
+.two{
+    transition: transform 0.5s linear;
+}
+.two img{
+    transition: transform 0.5s linear;
+}
+.two:hover .one{
+    transform: rotate(15deg)
+}
+.two:hover{
+    transform: translateY(5px);
+}
+/*产品主要功能  over*/
+.short>h2{
+    color: #00b5ef;
+}
+.short .long{
+
+
+}
+.reverse{
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-top: 0px;
+}
+.reverse img{
+    padding-top: 30px;
+}
+.reverse p{
+    width: 200px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 110px;
+}
+.long .reverse h3{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background: -webkit-linear-gradient(left,#02a7df 40%,#01cdee 100%);
+    display: block;
+    line-height: 50px;
+    color: white;
+    margin-top: 0;
+}
+.reverse:hover{
+    box-shadow:5px 6px 5px 0px grey;
+}
+/*媒体报道*/
+.inver{
+    padding-bottom: 65px;
+}
+.inver h2{
+    text-align: center;
+
+}
+.inver h4{
+    color: #4dc1f4;
+}
+.dire{
+    border-right: 1px solid #cccccc;
+}
+.dire-right{
+    border-right: 0;
+}
+
+.good p{
+    text-align: left;
+}
+
+.good a{
+    color: #000;
+}
